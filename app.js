@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Timer function
   function startTimer() {
-      let time = 5;
+      let time = 10;
       const timer = document.getElementById("timer");
       timer.innerHTML = time;
 
