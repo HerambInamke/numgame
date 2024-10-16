@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.8.0</title>
+
+  <!-- <link rel="shortcut icon" type="image/png" href="jasmine/jasmine-2.8.0/face.png"> -->
+  <link rel="stylesheet" href="jasmine/jasmine-2.8.0/jasmine.css">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="jasmine/jasmine-2.8.0/jasmine.js"></script>
+  <script src="jasmine/jasmine-2.8.0/jasmine-html.js"></script>
+  <script src="jasmine/jasmine-2.8.0/boot.js"></script>
+
+  <!-- include source files here... -->
+
+  <script src="src/app.js"></script>
+
+<!-- Comment out the following code to visualise the game output, it can later be uncommented to visualise test cases -->
+  <script src="tests/FunctionsTest.js"></script>
+
+</head>
+<body class="game-cover flex-centered">
+  <img id="logo" src="https://github.com/Kalvium-Program/numeron-boilerplate/blob/main/assets/numberon_image.png?raw=true" alt="Numeron Logo" />
+  <img id="play-button" class="play" src="https://github.com/Kalvium-Program/numeron-boilerplate/blob/main/assets/play_button.png?raw=true" alt="Play Button" />
+
+  <div class="game flex-centered">
+    <div id="timer" class="flex-centered"></div>
+    <div id="instructions">Guess the relation</div>
+    <div id="numbers">
+      <div id="number1" class="number-holder flex-centered">25</div>
+      <div>?</div>
+      <div id="number2" class="number-holder flex-centered">32</div>
+    </div>
+    <div id="buttons" class="flex-centered">
+      <img
+        id="greater-than"
+        src="https://github.com/Kalvium-Program/numeron-boilerplate/blob/main/assets/greater-than-button_.png?raw=true"
+        alt="greater-than-button"
+      />
+      <img
+        id="equal-to"
+        src="https://github.com/Kalvium-Program/numeron-boilerplate/blob/main/assets/equal-to-button.png?raw=true"
+        alt="equal-to-button"
+      />
+      <img
+        id="lesser-than"
+        src="https://github.com/Kalvium-Program/numeron-boilerplate/blob/main/assets/lesser-than-button.png?raw=true"
+        alt="less-than-button"
+      />
+    </div>
+  </div>
+
+  <div class="gameover flex-centered" style="display: none;">
+    <img id="game-over-text" src="https://github.com/Kalvium-Program/numeron-boilerplate/blob/main/assets/gameover-text.png?raw=true" alt="game-over" />
+    <div id="score-box">Score: <span id="score-board"></span></div>
+    <img id="play-again-button" src="https://github.com/Kalvium-Program/numeron-boilerplate/blob/main/assets/play-again-button.png?raw=true" alt="play-again" class="play" />
+  </div>
+
+  <script src="app.js"></script>
+</body>
+  
+
+
+</html>
