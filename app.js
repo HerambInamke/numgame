@@ -4,17 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const gameOverContainer = document.querySelector(".gameover");
     let score = 0;
     let timerId;
-  
-  // Challenge 1 :- Reference the play button and on click of it the startGame() function should be called
-  // Expectation of the function :- visibility  of the play button and the game container changes  when the play button is clicked, ensuring that the game starts as expected.
-  
     playButton.onclick = () => {
      playButton.style.display ='none';
      gameContainer.style.display ='flex';
      startGame();
     };
   
-    // Challenge 2 :- Complete function generateRandomNumbers that will generate Randomnumbers. You will need to reference elements from the DOM and change its innerHTML value to be Random numbers.
+   
   
     function generateRandomNumbers() {
       const number1 = document.getElementById('number1')
@@ -24,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
   
-    // The timer function is already done for you!
   
     function startTimer() {
      
@@ -90,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
   equalToButton.onclick= ()=>checkAnswer('=')
   lesserThanButton.onclick= ()=>checkAnswer('<')
   
-  // Challenge 4 :-  On clicking  Play again button, the user should get to play the game again, change the dislay of the game contaier and gameoverContainer and invoke the starGame() method
+  method
   function playAgainHandler() {
     gameOverContainer.style.display = 'none';
     gameContainer.style.display = 'flex';
