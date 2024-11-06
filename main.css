@@ -121,3 +121,66 @@ body {
   width: 180px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  /* Adjust layout for tablets and smaller screens */
+  .container {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust for mobile devices */
+  .container {
+      padding: 5px;
+  }
+  .content {
+      font-size: 14px; /* Slightly smaller font size on mobile */
+  }
+}
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+          .main {
+              font-size: 40px;
+          }
+
+          .logo {
+              width: 80px;
+          }
+
+          .pic {
+              max-width: 200px;
+          }
+
+          h2 {
+              font-size: 30px;
+          }
+
+          .credit {
+              font-size: 20px;
+              margin-top: 30px;
+          }
+      }
+
+      @media (max-width: 480px) {
+          .main {
+              font-size: 30px;
+          }
+
+          .logo {
+              width: 60px;
+          }
+
+          .pic {
+              max-width: 150px;
+              margin: 10px;
+          }
+
+          h2 {
+              font-size: 24px;
+          }
+
+          .credit {
+              font-size: 18px;
+              padding: 10px;
+          }
+      }
